@@ -1,0 +1,162 @@
+[
+  {
+    "template_id": "wf-001",
+    "name": "YouTube Video Production",
+    "description": "Complete pipeline from script to published video",
+    "goal": "growth",
+    "platforms": ["youtube"],
+    "steps": [
+      "Generate Script",
+      "Create Thumbnail",
+      "Write Description",
+      "Schedule Upload"
+    ],
+    "estimated_time": "30 minutes",
+    "estimated_cost": "$2.50",
+    "icon": "🎥"
+  },
+  {
+    "template_id": "wf-002",
+    "name": "Podcast to Social Clips",
+    "description": "Turn podcast into multiple short-form clips",
+    "goal": "repurpose",
+    "platforms": ["instagram", "tiktok", "youtube"],
+    "steps": [
+      "Transcribe Audio",
+      "Find Viral Moments",
+      "Edit Clips",
+      "Add Captions"
+    ],
+    "estimated_time": "15 minutes",
+    "estimated_cost": "$3.50",
+    "icon": "🎙"
+  },
+  {
+    "template_id": "wf-003",
+    "name": "LinkedIn Content Engine",
+    "description": "Weekly LinkedIn post creation and scheduling",
+    "goal": "growth",
+    "platforms": ["linkedin"],
+    "steps": [
+      "Topic Research",
+      "Write Post",
+      "Create Carousel",
+      "Schedule Post"
+    ],
+    "estimated_time": "20 minutes",
+    "estimated_cost": "$1.50",
+    "icon": "💼"
+  },
+  {
+    "template_id": "wf-004",
+    "name": "Instagram Reel Generator",
+    "description": "Generate reels from trending topics",
+    "goal": "growth",
+    "platforms": ["instagram"],
+    "steps": [
+      "Analyze Trends",
+      "Generate Script",
+      "Create Reel",
+      "Add Music"
+    ],
+    "estimated_time": "10 minutes",
+    "estimated_cost": "$1.00",
+    "icon": "📱"
+  },
+  {
+    "template_id": "wf-005",
+    "name": "Twitter Thread Writer",
+    "description": "Create high-engagement Twitter threads",
+    "goal": "engagement",
+    "platforms": ["twitter"],
+    "steps": [
+      "Select Topic",
+      "Generate Hooks",
+      "Write Thread",
+      "Optimize Hashtags"
+    ],
+    "estimated_time": "8 minutes",
+    "estimated_cost": "$0.75",
+    "icon": "🐦"
+  },
+  {
+    "template_id": "wf-006",
+    "name": "Blog SEO Optimizer",
+    "description": "Optimize blogs for search engines",
+    "goal": "growth",
+    "platforms": ["website"],
+    "steps": [
+      "Keyword Research",
+      "Optimize Headings",
+      "Improve Meta Tags",
+      "Internal Linking"
+    ],
+    "estimated_time": "25 minutes",
+    "estimated_cost": "$2.00",
+    "icon": "📝"
+  },
+  {
+    "template_id": "wf-007",
+    "name": "Email Newsletter Builder",
+    "description": "Create and schedule weekly newsletters",
+    "goal": "engagement",
+    "platforms": ["email"],
+    "steps": [
+      "Select Content",
+      "Write Email Copy",
+      "Design Layout",
+      "Schedule Campaign"
+    ],
+    "estimated_time": "18 minutes",
+    "estimated_cost": "$1.25",
+    "icon": "📧"
+  },
+  {
+    "template_id": "wf-008",
+    "name": "Shorts from Long Video",
+    "description": "Convert long videos into short-form content",
+    "goal": "repurpose",
+    "platforms": ["youtube", "instagram"],
+    "steps": [
+      "Analyze Video",
+      "Detect Highlights",
+      "Crop Video",
+      "Add Captions"
+    ],
+    "estimated_time": "12 minutes",
+    "estimated_cost": "$2.25",
+    "icon": "✂️"
+  },
+  {
+    "template_id": "wf-009",
+    "name": "Content Calendar Planner",
+    "description": "Plan content for the entire month",
+    "goal": "planning",
+    "platforms": ["instagram", "linkedin", "twitter"],
+    "steps": [
+      "Analyze Past Content",
+      "Generate Ideas",
+      "Assign Dates",
+      "Finalize Calendar"
+    ],
+    "estimated_time": "40 minutes",
+    "estimated_cost": "$3.00",
+    "icon": "🗓"
+  },
+  {
+    "template_id": "wf-010",
+    "name": "YouTube Comment Responder",
+    "description": "Auto-generate replies to YouTube comments",
+    "goal": "engagement",
+    "platforms": ["youtube"],
+    "steps": [
+      "Fetch Comments",
+      "Analyze Sentiment",
+      "Generate Replies",
+      "Post Responses"
+    ],
+    "estimated_time": "5 minutes",
+    "estimated_cost": "$0.50",
+    "icon": "💬"
+  }
+]
