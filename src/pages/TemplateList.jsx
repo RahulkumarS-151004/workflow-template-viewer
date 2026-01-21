@@ -32,7 +32,7 @@ const filteredTemplates = templates.filter((template) => {
     <div>
       <h1 className="heading">Workflow Templates</h1>
       <h3 className="subheading">Ready-to-use workflow for content creators</h3>
-
+    <div className="page-container">
       <div className="filters">
   <input
     type="text"
@@ -65,15 +65,15 @@ const filteredTemplates = templates.filter((template) => {
   </select>
 </div>
 
-
-      <div className="grid">
-        {filteredTemplates.map((template) => (
+<div className="grid">
+{filteredTemplates.map((template) => (
   <TemplateCard
     key={template.template_id}
     template={template}
     onClick={setSelectedTemplate}
   />
 ))}
+</div>
 </div>
 
 {filteredTemplates.length === 0 && (
