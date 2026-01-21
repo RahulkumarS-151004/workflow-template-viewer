@@ -140,7 +140,7 @@ hr {
   z-index: 1000;
 }
 
-.tnd {
+.tnd, .tnp{
   text-align: center;
   font-size: 14px;
   color: #9CA3AF;
@@ -193,7 +193,7 @@ hr {
 }
 
 .modal p {
-  color: #9CA3AF;
+  color: whitesmoke;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -214,6 +214,34 @@ hr {
 .subheading{
   text-align: center; 
 }
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  background: #020617;
+  border: 1px solid #1F2937;
+  color: #E5E7EB;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.filters input::placeholder {
+  color: #6B7280;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+
 
 @media (max-width: 768px) {
   .grid {

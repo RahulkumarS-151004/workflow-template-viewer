@@ -7,6 +7,8 @@ function TemplateModal({ template, onClose }) {
         <h2>{template.icon} {template.name}</h2>
         <p>{template.description}</p>
         <p><b>Goal: </b>{template.goal}</p>
+        <p><b>Platforms:</b> {template.platforms.join(', ')}</p>
+
         <h4>Steps</h4>
         <ul>
           {template.steps.map((step, index) => (
