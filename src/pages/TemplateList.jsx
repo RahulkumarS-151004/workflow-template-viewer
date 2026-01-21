@@ -8,7 +8,8 @@ function TemplateList() {
 
   return (
     <div>
-      <h1>Workflow Templates</h1>
+      <h1 className="heading">Workflow Templates</h1>
+      <h3 className="subheading">Ready-to-use workflow for content creators</h3>
 
       <div className="grid">
         {templates.map((template) => (

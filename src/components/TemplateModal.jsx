@@ -6,7 +6,7 @@ function TemplateModal({ template, onClose }) {
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <h2>{template.icon} {template.name}</h2>
         <p>{template.description}</p>
-
+        <p><b>Goal: </b>{template.goal}</p>
         <h4>Steps</h4>
         <ul>
           {template.steps.map((step, index) => (
