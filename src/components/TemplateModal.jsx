@@ -1,3 +1,6 @@
+import AgentCard from "./AgentCard";
+import RequiredAgents from "./RequiredAgents";
+
 function TemplateModal({ template, onClose }) {
   if (!template) return null;
 
@@ -7,14 +10,21 @@ function TemplateModal({ template, onClose }) {
         <h2>{template.icon} {template.name}</h2>
         <p>{template.description}</p>
         <p><b>Goal: </b>{template.goal}</p>
-        <p><b>Platforms:</b> {template.platforms.join(', ')}</p>
+        <p>Platforms: {(template.platforms || []).join(", ")}</p>
+
 
         <h4>Steps</h4>
+        {Array.isArray(template.steps) && (
         <ul>
           {template.steps.map((step, index) => (
-            <li key={index}>{step}</li>
-          ))}
+          <li key={index}>{step}</li>)
+          )
+          }
         </ul>
+        )
+        }
+
+        <RequiredAgents agents={template.required_agents} />
 
         <p><b>Time:</b> {template.estimated_time}</p>
         <p><b>Cost:</b> {template.estimated_cost}</p>

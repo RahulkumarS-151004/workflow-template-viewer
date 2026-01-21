@@ -13,8 +13,39 @@
     ],
     "estimated_time": "30 minutes",
     "estimated_cost": "$2.50",
-    "icon": "🎥"
+    "icon": "🎥",
+    "required_agents": [
+      {
+        "agent_id": "agent-script",
+        "name": "Script Writer",
+        "icon": "📝",
+        "category": "content",
+        "description": "Generates structured video scripts"
+      },
+      {
+        "agent_id": "agent-thumbnail",
+        "name": "Thumbnail Creator",
+        "icon": "🖼",
+        "category": "design",
+        "description": "Creates engaging video thumbnails"
+      },
+      {
+        "agent_id": "agent-seo",
+        "name": "SEO Optimizer",
+        "icon": "📈",
+        "category": "optimization",
+        "description": "Optimizes titles and descriptions for reach"
+      },
+      {
+        "agent_id": "agent-scheduler",
+        "name": "Social Scheduler",
+        "icon": "📅",
+        "category": "publishing",
+        "description": "Schedules content for publishing"
+      }
+    ]
   },
+
   {
     "template_id": "wf-002",
     "name": "Podcast to Social Clips",
@@ -29,8 +60,39 @@
     ],
     "estimated_time": "15 minutes",
     "estimated_cost": "$3.50",
-    "icon": "🎙"
+    "icon": "🎙",
+    "required_agents": [
+      {
+        "agent_id": "agent-transcription",
+        "name": "Transcription Agent",
+        "icon": "🧾",
+        "category": "content",
+        "description": "Converts audio into text"
+      },
+      {
+        "agent_id": "agent-trend",
+        "name": "Trend Analyzer",
+        "icon": "🔥",
+        "category": "analysis",
+        "description": "Identifies viral moments"
+      },
+      {
+        "agent_id": "agent-video-editor",
+        "name": "Video Editor",
+        "icon": "🎬",
+        "category": "editing",
+        "description": "Edits short-form video clips"
+      },
+      {
+        "agent_id": "agent-caption",
+        "name": "Caption Generator",
+        "icon": "💬",
+        "category": "content",
+        "description": "Adds engaging captions"
+      }
+    ]
   },
+
   {
     "template_id": "wf-003",
     "name": "LinkedIn Content Engine",
@@ -45,8 +107,32 @@
     ],
     "estimated_time": "20 minutes",
     "estimated_cost": "$1.50",
-    "icon": "💼"
+    "icon": "💼",
+    "required_agents": [
+      {
+        "agent_id": "agent-content",
+        "name": "Content Writer",
+        "icon": "✍️",
+        "category": "content",
+        "description": "Writes professional LinkedIn posts"
+      },
+      {
+        "agent_id": "agent-designer",
+        "name": "Graphic Designer",
+        "icon": "🎨",
+        "category": "design",
+        "description": "Creates carousel visuals"
+      },
+      {
+        "agent_id": "agent-scheduler",
+        "name": "Social Scheduler",
+        "icon": "📅",
+        "category": "publishing",
+        "description": "Schedules LinkedIn posts"
+      }
+    ]
   },
+
   {
     "template_id": "wf-004",
     "name": "Instagram Reel Generator",
@@ -61,8 +147,32 @@
     ],
     "estimated_time": "10 minutes",
     "estimated_cost": "$1.00",
-    "icon": "📱"
+    "icon": "📱",
+    "required_agents": [
+      {
+        "agent_id": "agent-trend",
+        "name": "Trend Analyzer",
+        "icon": "🔥",
+        "category": "analysis",
+        "description": "Identifies trending topics"
+      },
+      {
+        "agent_id": "agent-script",
+        "name": "Script Writer",
+        "icon": "📝",
+        "category": "content",
+        "description": "Writes reel scripts"
+      },
+      {
+        "agent_id": "agent-video-editor",
+        "name": "Video Editor",
+        "icon": "🎬",
+        "category": "editing",
+        "description": "Creates Instagram reels"
+      }
+    ]
   },
+
   {
     "template_id": "wf-005",
     "name": "Twitter Thread Writer",
@@ -77,8 +187,25 @@
     ],
     "estimated_time": "8 minutes",
     "estimated_cost": "$0.75",
-    "icon": "🐦"
+    "icon": "🐦",
+    "required_agents": [
+      {
+        "agent_id": "agent-content",
+        "name": "Content Writer",
+        "icon": "✍️",
+        "category": "content",
+        "description": "Writes Twitter threads"
+      },
+      {
+        "agent_id": "agent-seo",
+        "name": "SEO Optimizer",
+        "icon": "📈",
+        "category": "optimization",
+        "description": "Optimizes hashtags and reach"
+      }
+    ]
   },
+
   {
     "template_id": "wf-006",
     "name": "Blog SEO Optimizer",
@@ -93,8 +220,25 @@
     ],
     "estimated_time": "25 minutes",
     "estimated_cost": "$2.00",
-    "icon": "📝"
+    "icon": "📝",
+    "required_agents": [
+      {
+        "agent_id": "agent-seo",
+        "name": "SEO Optimizer",
+        "icon": "📈",
+        "category": "optimization",
+        "description": "Improves blog SEO performance"
+      },
+      {
+        "agent_id": "agent-content",
+        "name": "Content Writer",
+        "icon": "✍️",
+        "category": "content",
+        "description": "Refines blog content"
+      }
+    ]
   },
+
   {
     "template_id": "wf-007",
     "name": "Email Newsletter Builder",
@@ -109,8 +253,32 @@
     ],
     "estimated_time": "18 minutes",
     "estimated_cost": "$1.25",
-    "icon": "📧"
+    "icon": "📧",
+    "required_agents": [
+      {
+        "agent_id": "agent-email",
+        "name": "Email Composer",
+        "icon": "✉️",
+        "category": "content",
+        "description": "Writes newsletter content"
+      },
+      {
+        "agent_id": "agent-designer",
+        "name": "Graphic Designer",
+        "icon": "🎨",
+        "category": "design",
+        "description": "Designs email layouts"
+      },
+      {
+        "agent_id": "agent-scheduler",
+        "name": "Social Scheduler",
+        "icon": "📅",
+        "category": "publishing",
+        "description": "Schedules email campaigns"
+      }
+    ]
   },
+
   {
     "template_id": "wf-008",
     "name": "Shorts from Long Video",
@@ -125,8 +293,25 @@
     ],
     "estimated_time": "12 minutes",
     "estimated_cost": "$2.25",
-    "icon": "✂️"
+    "icon": "✂️",
+    "required_agents": [
+      {
+        "agent_id": "agent-video-editor",
+        "name": "Video Editor",
+        "icon": "🎬",
+        "category": "editing",
+        "description": "Extracts short clips"
+      },
+      {
+        "agent_id": "agent-caption",
+        "name": "Caption Generator",
+        "icon": "💬",
+        "category": "content",
+        "description": "Adds captions to shorts"
+      }
+    ]
   },
+
   {
     "template_id": "wf-009",
     "name": "Content Calendar Planner",
@@ -141,8 +326,25 @@
     ],
     "estimated_time": "40 minutes",
     "estimated_cost": "$3.00",
-    "icon": "🗓"
+    "icon": "🗓",
+    "required_agents": [
+      {
+        "agent_id": "agent-planner",
+        "name": "Content Planner",
+        "icon": "🧠",
+        "category": "planning",
+        "description": "Plans content calendar"
+      },
+      {
+        "agent_id": "agent-analytics",
+        "name": "Trend Analyzer",
+        "icon": "📊",
+        "category": "analysis",
+        "description": "Analyzes past performance"
+      }
+    ]
   },
+
   {
     "template_id": "wf-010",
     "name": "YouTube Comment Responder",
@@ -157,6 +359,22 @@
     ],
     "estimated_time": "5 minutes",
     "estimated_cost": "$0.50",
-    "icon": "💬"
+    "icon": "💬",
+    "required_agents": [
+      {
+        "agent_id": "agent-sentiment",
+        "name": "Sentiment Analyzer",
+        "icon": "😊",
+        "category": "analysis",
+        "description": "Analyzes comment sentiment"
+      },
+      {
+        "agent_id": "agent-content",
+        "name": "Content Writer",
+        "icon": "✍️",
+        "category": "content",
+        "description": "Generates comment replies"
+      }
+    ]
   }
 ]

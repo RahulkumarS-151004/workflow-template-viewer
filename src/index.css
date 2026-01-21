@@ -118,7 +118,7 @@ button:active {
 
 hr {
   border: none;
-  border-top: 1px solid rgb(0, 0, 9);   /* subtle divider */
+  border-top: 1px solid rgb(0, 0, 9);
   margin: 12px 0;
 }
 
@@ -235,6 +235,7 @@ hr {
   padding: 10px 12px;
   border-radius: 8px;
   font-size: 14px;
+  min-width: 200px;
 }
 
 .filters input::placeholder {
@@ -245,6 +246,104 @@ hr {
 .filters select:focus {
   outline: none;
   border-color: #3B82F6;
+}
+
+/* ===== Agent Cards ===== */
+.agent-card {
+  background: #020617;
+  border: 1px solid #1F2937;
+  border-radius: 14px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agent-card:hover .agent-name{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25); 
+  color: #93C5FD;
+}
+
+/* Icon */
+.agent-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Name */
+.agent-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F9FAFB;
+  margin: 4px 0;
+}
+
+/* Category badge */
+.agent-category {
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #93C5FD;
+  background: rgba(59, 130, 246, 0.15);
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+/* Disabled button */
+.agent-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #1F2937,
+    #020617
+  );
+
+  color: #9CA3AF;
+  font-size: 13px;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+
+/* ===== Required Agents Section ===== */
+.required-agents {
+  margin-top: 28px;
+}
+
+.agents-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #F9FAFB;
+  margin-bottom: 14px;
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.agents-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #9CA3AF;
+  text-align: center;
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -258,10 +357,19 @@ hr {
     min-height: auto;
   }
 
-  .modal {
-    width: 100%;
-    margin: 0 12px;
-  }
+.modal {
+  background: #020617;
+  border: 1px solid #1F2937;
+  border-radius: 16px;
+
+  width: 420px;
+  max-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0; /* important */
+}
 
   .card-title {
     font-size: 15px;

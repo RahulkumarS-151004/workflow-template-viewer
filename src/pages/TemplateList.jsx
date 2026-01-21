@@ -9,25 +9,31 @@ const [searchText, setSearchText] = useState("");
 const [selectedGoal, setSelectedGoal] = useState("all");
 const [selectedPlatform, setSelectedPlatform] = useState("all");
 
-const filteredTemplates = templates.filter((template) => {
+const safeTemplates = Array.isArray(templates) ? templates : [];
+
+
+const filteredTemplates = safeTemplates.filter((template) => {
+  // SAFETY: fallback values
+  const name = template.name || "";
+  const goal = template.goal || "";
+  const platforms = template.platforms || [];
+
   const matchesSearch =
-    template.name
-      .toLowerCase()
-      .includes(searchText.trim().toLowerCase());
+    name.toLowerCase().includes(searchText.trim().toLowerCase());
 
   const matchesGoal =
     selectedGoal === "all" ||
-    template.goal.toLowerCase() === selectedGoal.toLowerCase();
+    goal.toLowerCase() === selectedGoal.toLowerCase();
 
   const matchesPlatform =
     selectedPlatform === "all" ||
-    template.platforms.some(
-      (platform) =>
-        platform.toLowerCase() === selectedPlatform.toLowerCase()
+    platforms.some(
+      (p) => p.toLowerCase() === selectedPlatform.toLowerCase()
     );
 
   return matchesSearch && matchesGoal && matchesPlatform;
 });
+
   return (
     <div>
       <h1 className="heading">Workflow Templates</h1>
@@ -77,7 +83,7 @@ const filteredTemplates = templates.filter((template) => {
 </div>
 
 {filteredTemplates.length === 0 && (
-  <p style={{ textAlign: "center", color: "#9CA3AF" }}>
+  <p className="empty-state"style={{ textAlign: "center", color: "#9CA3AF" }}>
     No workflows found.
   </p>
 )}

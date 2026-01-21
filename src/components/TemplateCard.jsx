@@ -1,4 +1,5 @@
 function TemplateCard({ template, onClick }) {
+  if (!template) return null;
   return (
     <div className="card" >
       <div className="card-content">
