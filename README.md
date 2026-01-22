@@ -1,106 +1,99 @@
-# Workflow Template Viewer
+# Workflow Template Viewer – AI Marketplace
 
 ## Overview
 
-The **Workflow Template Viewer** is a lightweight, frontend-only React application built as part of the **AI Marketplace module** at Incubrix.
-It allows content creators to browse, search, and filter pre-built automation workflow templates using a clean and intuitive UI.
-
-This application uses **static JSON data** and does not include any backend or API integration, making it easily extendable for future enhancements.
+The **Workflow Template Viewer** is a frontend module developed as part of the **AI Marketplace** initiative. It provides a clean and intuitive interface for browsing pre-built automation workflows designed for content creators. The application is currently powered by static JSON data and is structured to support seamless future integration with backend agent execution services.
 
 ---
 
-## Features Implemented
+## Key Features Implemented
 
-### ✅ Workflow Catalog
+### Workflow Catalog View
+- Displays workflow templates in a responsive, card-based grid layout.
+- Each card presents high-level workflow information for quick scanning.
 
-* Displays workflow templates in a **card-based grid layout**
-* Each card shows:
+### Search Functionality
+- Allows users to search workflows by template name.
+- Case-insensitive and responsive to real-time input.
 
-  * Icon
-  * Template name
-  * Short description
-  * Primary action button
+### Filtering Capabilities
+- Filter workflows by goal (e.g., Growth, Engagement, Repurpose).
+- Filter workflows by supported platforms (e.g., YouTube, Instagram, LinkedIn).
+- Supports combined search and filter conditions.
 
-### ✅ Template Detail Modal
+### Workflow Detail Modal
+- Clickable cards open a modal displaying full workflow details.
+- Modal includes description, steps, estimated time, cost, and required agents.
+- Scrollable content area with fixed modal structure for improved usability.
 
-* Clicking on a workflow opens a **modal view**
-* Modal displays complete workflow information:
+### Required Agents Section
+- Displays agents required to execute each workflow.
+- Agent cards are UI-ready and currently marked as **“coming soon.”**
+- Designed for future backend-driven agent execution integration.
 
-  * Description
-  * Goal
-  * Supported platforms
-  * Step-by-step workflow
-  * Estimated time and cost
+### UI & UX Enhancements
+- Applied provided color scheme and aligned UI with frontend design standards.
+- Improved visual hierarchy and consistency across components.
+- Responsive design optimized for both desktop and mobile screens.
 
-### ✅ Search Functionality
-
-* Search workflows by **template name**
-* Case-insensitive and real-time filtering
-
-### ✅ Filters
-
-* **Filter by Goal** (Growth, Repurpose, Engagement, Planning)
-* **Filter by Platform** (YouTube, Instagram, LinkedIn, Twitter, etc.)
-* Filters can be combined with search
-* “All” option resets individual filters
-
-### ✅ Responsive Design
-
-* Optimized for **desktop, tablet, and mobile**
-* Grid and filters adjust gracefully across screen sizes
-
-### ✅ Clean & Modern UI
-
-* Card-based layout with hover effects
-* Gradient primary buttons
-* Dark-themed interface suitable for AI/SaaS products
-* Consistent spacing and alignment between filters and cards
+### Edge Case Handling
+- Graceful handling of empty or invalid data sets.
+- Safe rendering for missing or undefined fields.
+- User-friendly **“No workflows found”** state for zero results.
 
 ---
 
 ## Tech Stack
 
-* **React (Vite)**
-* **JavaScript (ES6+)**
-* **CSS (custom, no UI library)**
-* **Static JSON data**
+- **Framework:** React (Vite)
+- **Styling:** CSS (custom, responsive)
+- **Data Source:** Static JSON
+- **Architecture:** Component-based, data-driven UI
 
 ---
 
 ## Project Structure
 
 ```
+
 src/
 ├── components/
 │   ├── TemplateCard.jsx
-│   └── TemplateModal.jsx
+│   ├── TemplateModal.jsx
+|   ├── RequiredAgents.jsx
+│   ├── AgentCard.jsx
 ├── pages/
 │   └── TemplateList.jsx
 ├── data/
 │   └── workflowTemplates.json
 ├── App.jsx
-├── main.jsx
-└── index.css
-```
+└── main.jsx
+
+````
 
 ---
 
 ## How It Works
 
-* Workflow data is loaded from a local JSON file
-* Filters and search are implemented using React state
-* The displayed templates are derived from filtered data
-* No backend or API calls are used
+- Workflow templates are loaded from a local static JSON file and normalized to ensure safe rendering.
+- Search functionality allows users to find workflows by template name using case-insensitive matching.
+- Filters enable users to browse workflows by goal and supported platforms, with support for combined filter conditions.
+- The displayed workflow list is dynamically derived from the filtered and searched data using React state.
+- Selecting a workflow opens a detailed modal showing complete workflow information, including steps, estimated time, cost, and required agents.
+- The modal uses a fixed layout with a scrollable content area to improve readability and user experience.
+- Required agents are displayed as UI-ready cards, designed for future backend-driven agent execution.
+- Edge cases such as empty datasets, no matching results, and missing fields are handled gracefully with fallback UI states.
+- The UI is fully responsive and aligned with the provided frontend color scheme and design standards.
+- The application is structured to allow seamless future integration with backend APIs without changing core UI logic.
 
 ---
 
 ## Getting Started
 
 ### Install Dependencies
-
 ```bash
 npm install
-```
+````
 
 ### Run the Application
 
@@ -109,19 +102,7 @@ npm run dev
 ```
 
 The app will be available at:
-
 ```
 http://localhost:5173
 ```
-
----
-
-## Current Scope
-
-* Frontend-only implementation
-* Static data rendering
-* No authentication or persistence
-
----
-
 
