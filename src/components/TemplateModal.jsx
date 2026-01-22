@@ -1,4 +1,3 @@
-import AgentCard from "./AgentCard";
 import RequiredAgents from "./RequiredAgents";
 
 function TemplateModal({ template, onClose }) {

@@ -172,7 +172,7 @@ hr {
   border: 1px solid rgba(59, 130, 246, 0.35);
   padding: 28px;
   border-radius: 18px;
-
+  scrollbar-width:none;
   width: 440px;
   max-width: 90%;
   max-height: 85vh;

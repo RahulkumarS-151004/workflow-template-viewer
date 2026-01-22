@@ -39,7 +39,7 @@ const filteredTemplates = safeTemplates.filter((template) => {
       <h1 className="heading">Workflow Templates</h1>
       <h3 className="subheading">Ready-to-use workflow for content creators</h3>
     <div className="page-container">
-      <div className="filters">
+<div className="filters">
   <input
     type="text"
     placeholder="Search workflows..."
